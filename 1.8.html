@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>注册</title>
+	<link rel="icon" href="图片/图标.jpg">
+	<style>
+   *{
+		padding:0px;
+		margin:0px;
+	}
+	body{
+    background-image:url(图片/注册1.jpg);
+    background-repeat:no-repeat;
+    background-image-width:100%;
+    background-image-height:100%;
+    background-attachment: fixed;
+
+  }
+  p{  
+    	font-size:43px;
+    	font-family:宋体;
+    	font-style: oblique;
+    	font-weight:bold;
+    	text-indent:1em;
+    	text-shadow:3px -3px 1px gray;
+    }
+    #one{
+
+      margin-left:640px;
+     	margin-top:40px; 
+     	width:480px;
+    }
+
+     ul{
+     	width:480px;
+     	height:600px;
+     	list-style-type:none;
+     }
+     li{
+     	height:50px;
+     	line-height:50px;
+     }
+
+	</style>
+	
+</head>
+<body>
+	<div id="one">
+	<p>Register</p><br>
+    <ul>
+    <form action="首页.index.html" name="qq" method="post"> 
+    <li>昵称：<input  type="text"  name="ures" placeholder="用户名  *" required></li>
+    <li>头像：<input  type="file"  name="phontos" ></li>
+    <li>生日：<input  type="date"    name="date"></li>
+    <li>性别：<input  type="radio"   name="sex">男    
+         <input  type="radio"      name="sex">女 </li>
+    <li>密码：<input  type="password"  name="key" placeholder=" *6-16个字母组成区分大小写，不能为9以下的纯数"required></li>
+    <li>确认密码：<input  type="password"  name="key" placeholder=" *6-16个字母组成区分大小写，不能为9以下的纯数字"required></li>
+    <li>所在地：<select  name="loked">
+    <option  value="area">中国 </option>
+    <option  value="mei">美国 </option>       
+    </select>
+    <select  name="city">
+    <option  value="beijin">北京 </option>
+    <option  value="shanxi">陕西 </option>        
+    </select></li>
+    <li>爱好：<input type="checkbox" name="m1">爬山
+          <input type="checkbox" name="m2">音乐
+          <input type="checkbox" name="m3">唱歌
+          <input type="checkbox" name="m4">阅读</li>
+        <li>验证码：<input  type="text"  name="keys" ></li>
+        <li>验证图片：<img src="图片/验证图片.jpg">   <a href="#">看不清换一张</a></li><br>
+         <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" onclick="myFunction()" value="提交"/></li>
+	</form>
+	 </ul>
+	</div>
+	<script>
+   function myFunction()
+   {
+   	 var r=confirm("请选择按钮!");
+   	 if(r==ture)
+   	 	return ture;
+   	 else
+   	 	return false;
+      
+   }
+ </script>
+</body>
+</html>

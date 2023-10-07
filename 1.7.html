@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>
+		登录
+	</title>
+	<link rel="icon" href="图片/图标.jpg">
+	<style>
+	*{
+		padding:0px;
+		margin:0px;
+	}
+	body{
+    background-image:url(图片/注册1.jpg);
+    background-repeat:no-repeat;
+    background-image-width:100%;
+    background-image-height:100%;
+    background-attachment: fixed;
+
+  }
+    #one{
+    width:350px;
+    height:250px; 
+    position:absolute;
+    top:12em;
+    left:37em;
+
+    }
+    p{  
+    	font-size:43px;
+    	font-family:宋体;
+    	font-style: oblique;
+    	font-weight:bold;
+    	text-indent:3em;
+    	text-shadow:3px -3px 1px gray;
+    }
+     input[type=text]{
+     width: 100%;
+     padding: 10px 20px;
+     margin-left:0em;
+     margin-right: 2em;
+     box-sizing: border-box;
+     border: none;
+     border-bottom: 2px solid black;
+     background:none;
+ }
+ input[type=password]{
+     width: 100%;
+     padding: 10px 20px;
+     margin-left:0em;
+     margin-right: 2em;
+     box-sizing: border-box;
+     border: none;
+     border-bottom: 2px solid black;
+     background:none;
+}
+    input[type=submit]{
+    	background:none;
+    	 border: none;
+    }
+    label{
+    font-family:微软雅黑;	
+    }
+	</style>
+	
+</head>
+<body>
+	 <div id="one">
+		<p>Login</p><br><br>
+		<from name="myForm" action="demo_form.php"
+              onsubmit="return validateForm()" method="post">
+		 <label for="fname">用户名:</label><br>
+         <input type="text" id="x" name="fname"><br><br>
+         <label for="lname">密码:</label><br>
+         <input type="password" id="y" name="lname"><br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="de" type="submit" onclick="myFunction()" value="提交"/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+         <a href="1.8.html"><input type="submit" id="zhu" value="注册"/></a>
+        </from>
+	  </div>
+	  <script>
+   function myFunction()
+   {
+   	 var x=document.getElementById("x"); 
+     var y=document.getElementById("y");
+     if(x.value =="" || y.value ==""){
+     	alert("名字密码不能为空。");
+     }
+      else
+       alert("登录成功");
+   }
+ </script>
+
+</body>
+</html>

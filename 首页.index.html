@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>欢迎来到陕西--安康</title>
+  <link rel="icon" href="图片/图标.jpg">
+	<style>
+  body{
+    background-image:url(图片/背景.jpg);
+     background-repeat:repeat-y;
+  /*  background-attachment: fixed;*/
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    }
+	*{
+		margin:0px;
+		padding:0px;
+	}
+    #all{
+    width:1200px;
+    height:700px;
+    margin-left:auto;
+    margin-right:auto;
+    }
+    #one{
+    	width:3700px;
+    	height:450px;
+    	border-radius:10px;
+    	animation:dong 8s ease 1s infinite;
+    }
+    @keyframes dong{
+    	50%{margin-left:-1200px;}
+    	100%{margin-left:-2400px;}
+    }
+    main{
+    	width:1200px;
+    	height:450px;
+    	overflow:hidden;
+    }
+    div img{
+    	width:1200px;
+    	height:450px;
+    	border-radius:10px;
+    }
+    #two{
+      margin-top:25px; 
+    	width:1200px;
+    	height:60px;
+    background: #20B2AA;
+    border-radius:10px;
+    }
+    ul{
+    	list-style-type:none;
+        width:1200px;
+        height:60px;
+    }
+    /*ul li{
+    	width:100px;
+    	height:50px;
+    	float:left;
+        background:#20B2AA;
+        border-radius:15px;
+        line-height:30px;
+        margin-top:0px;
+        margin-left:90px;
+        text-indent:20px;  
+        /*transition:0.8s;} */
+    
+    #two >ul>li{
+	height: 60px;
+	width: 220px;
+	float: left;
+	list-style: none;
+	line-height: 60px;
+	text-align: center;
+	cursor:pointer;
+}
+#two >ul>li>ul{
+	display: none;
+}
+#two >ul>li:hover>ul{
+	display: block;
+}
+#two ul li a{
+  	width: 220px;
+  	height: 60px;
+  	display: block;
+  	color: white;
+  	font-size: 20px;
+  	text-decoration: none;
+  	line-height: 60px;
+  }
+#two >ul>li>a:hover{
+  	background:#20B2AA;
+  	border-top:2px solid #DDA0DD;}
+#two >ul>li>ul>li{
+	   width: 220px;
+  		list-style: none;
+  		background:  #20B2AA;
+  	}
+
+
+
+    /*ul li:hover{
+        background:#008B8B;
+        transform:scale(1.3);
+        transition:0.8s; 
+    }*/
+    #seven{
+        margin-left:50px;
+    }
+    #three{
+    	margin-top:40px;
+    	width:1200px;
+    	height:700px;
+/*    	background-color: pink;*/
+    }
+    #fourth{
+        width:300px;
+        height:250px; 
+        float:left;
+        background:#D4F2E7;
+        margin:10px;
+        text-indent:30px;
+        border-radius:12px;
+    }
+  #eve{
+    font-size:20px;
+    font-family:黑体;
+    font-weight:bloder;
+
+  }
+   dl dd{
+      height:25px;
+      line-height:25px;
+      font-family:宋体;
+      font-size:16px;
+      border-bottom:dotted 1px pink;
+
+    }
+     dl dd:hover{
+     	transform:scale(1.1);
+	    transition:0.2s;
+     }
+   dl dd a:hover{
+  	font-color: #DDA0DD;}
+    #fifth{
+        width:520px;
+        height:380px;
+        float:left;
+        background:#D4F2E7;
+        margin:10px;
+        border-radius:12px;
+       /* background-color: green;*/
+    }
+    #sixth{
+        width:300px;
+        height:350px;
+        float:left; 
+        background:#D4F2E7; 
+        margin:10px;
+        text-indent:30px;
+        border-radius:12px;
+    }
+    h4{
+      font-size:20px;
+     font-family:黑体;
+     text-indent:0em; 
+    }
+    span{
+      font-size:17px;
+     font-family:黑体;
+    }
+    p{
+      height:35px;
+      line-height:35px;
+      font-family:宋体;
+      font-size:16px;
+      text-indent:2em;
+    }
+    #even{
+      width:1200px;
+      height:200px;
+      margin-top:50px;
+      float:left; 
+      /*background-color: yellow;*/
+    }
+    #even p{
+    	text-align: center;
+    }
+    aside{
+    	margin-left:90em;
+    	position:fixed;
+    }
+    #sside{
+    	list-style-type:none;
+    }
+    #side{
+      width:50px;
+      height:50px;
+      line-height:45px;
+      border-radius:50px;
+      background-color:#D4F2E7;
+    }
+    #side:hover{
+	transform:scale(1.2);
+     }
+    #side span{
+    	margin-left:6px; 
+    }
+    a{
+    	text-decoration:none;
+    }
+    a:link {color:#000000;}     
+    a:visited {color:black;} 
+    a:hover {color:#20B2AA;}  
+    a:active {color:#0000FF;} 
+    #p1{
+    	width:50px;
+    	height:40px;
+    }
+      #p2{
+    	width:45px;
+    	height:47px;
+    }
+    #outer{
+		width:500px;
+		height:400px;
+		margin-left:5em;
+        margin-right:auto;
+		float:left;}
+	#m1{
+       width:500px;
+		height:400px;
+	}
+	#m2{
+       width:450px;
+		height:400px;
+        margin-top:10px;
+        margin-left:6em;
+         border-radius:10px;
+       /* margin-right:2em;*/
+        background-color: #D4F2E7;
+        float:left;
+
+	}
+	#m2 ul{
+		list-style-type:disc;
+		margin-left: 2em;
+	}
+	#m3{
+      width:450px;
+      height:10px;
+      font-size:19px;
+      margin-top:50px;
+
+	}
+	#m3:hover{
+		transform:scale(1.05);
+	}
+	</style>
+	// <script>
+ //      window.onload=function(){
+ //      	var img=document.getElementById("m1");
+ //        var imgArr=["图片/首页2.jpg","图片/首页3.jpg","图片/首页4.jpg","图片/首页5.jpg"];
+ //        var index= 0;
+ //        setInterval(
+ //           function(){ index++;
+ //           	if(index>imgArr.length-1) {index=0;}
+ //           	img.src=imgArr[index];}
+ //           	,1000);
+ //             }
+
+	// </script>
+</head>
+<body>
+	<div id="all">
+	
+		<main>
+		<div id="one">
+		<img src="图片/轮1.jpg">
+        <img src="图片/轮2.jpg">
+        <img src="图片/轮3.jpg">
+		</div>
+		</main>
+		<div id="two">
+		<!-- <ul>
+			<li id="seven"><a href="1.1.html" target="_blank">地理位置</a></li>
+			<li><a href="1.2.html" target="_blank">文化底蕴</a></li>
+			<li><a href="1.3.html" target="_blank">风景</a></li>
+			<li><a href="1.4.html" target="_blank" >小吃</a></li>
+			<li><a href="1.5.html" target="_blank" >名人</a></li>
+		</ul> -->
+    <ul>
+        <li><a href="1.1.html" target="_blank">地理位置</a>
+        <ul>
+            <li><a href="1.6.html">栀子花</a></li>
+           </ul></li>
+        <li><a href="1.2.html" target="_blank">文化底蕴</a>
+        <ul>
+            <li><a href="1.9.html">安康龙舟节</a></li>
+            </ul></li>
+        <li><a href="1.3.html" target="_blank">风景</a></li>
+        <li><a href="1.4.html" target="_blank" >小吃</a></li>
+         <li><a href="1.5.html" target="_blank" >名人</a></li>
+    </ul>
+        </div>
+		<div id="three">
+              <div id="fourth">
+                  <dl>
+                      <dd id="eve">著名景区</dd>
+                      <dd><a href="1.3.html" target="_blank">南宫山</a></dd>
+                      <dd><a href="1.3.html" target="_blank">瀛湖</a></dd>
+                      <dd><a href="1.3.html" target="_blank">擂鼓台</a></dd>
+                      <dd><a href="1.3.html" target="_blank">香溪洞</a></dd>
+                      <dd><a href="1.3.html" target="_blank">石泉古镇</a></dd>
+                      <dd><a href="1.3.html" target="_blank">后柳水乡</a></dd>
+                      <dd><a href="1.3.html" target="_blank">......</a></dd>
+                  </dl>
+              </div>
+              <div id="fifth">
+              <h4>简介:</h4>
+              <span>一，总体概况</span><br>
+              <p>安康，陕西省辖地级市。位于陕西省东南部，北依秦岭，南靠巴山，汉水横贯东西，河谷盆地（安康盆地）居中,下辖1区、8县、1县级市 。安康地处秦巴腹地，汉水之滨。根据第七次人口普查数据，截至2020年11月1日零时，安康市常住人口为2493436人。安康市面积23529平方千米。<br>
+              <span>二，主要区别</span><br>
+              &nbsp;&nbsp;该地区为中国北亚热带动植物典型代表区，有羚牛、朱鹮、大熊猫、云豹、大鲵等珍稀动物。是陕西省及西北地区最主要的茶叶、蚕茧、油桐、生漆主产区。</p>
+              </div>
+              <div id="sixth">
+              <h4>荣获成就:</h4>
+              <p>中国十大宜居小城<br>&nbsp;&nbsp;国家森林城市<br>&nbsp;&nbsp;中国十大节庆城市<br>&nbsp;&nbsp;全国绿化模范城市<br>&nbsp;&nbsp;陕西最美绿色园林城市<br>&nbsp;&nbsp;国家卫生城市<br>&nbsp;&nbsp;誉为“中国硒谷”等</p>
+              </div>
+              <div id="outer">
+	          <img src="图片/首页2.jpg" id="m1">
+              </div>
+              <div id="m2">
+              	<h4>安康时事新闻:</h4>
+                  <ul>
+                  	<li id="m3"><a href="http://www.akxw.cn/news/ankang/aknews/416301.html">省教育领域突出问题专项整治工作第二督导组…</a></li>
+                  	<li id="m3"><a href="http://www.akxw.cn/news/ankang/aknews/416282.html">“我在他乡挺好的”——写在世界首例朱鹮异…</a></li>
+                  	<li  id="m3"><a href="http://www.akxw.cn/news/ankang/aknews/416259.html">“安康富硒茶”区域公用品牌价值达39.6亿元…</a></li>
+                  	<li id="m3"><a href="http://www.akxw.cn/news/ankang/aknews/416231.html">走进龙舟节 | 龙舟逐浪争上游 金州健儿备战…</a></li>
+                  	<li  id="m3"><a href="http://www.akxw.cn/news/ankang/aknews/416192.html">吟诵汉江 传唱经典 “国风·汉江辞汇”活动…</a></li>
+                  </ul>
+              </div>
+             <div id="even">
+                <hr>
+               <p>主办：计算机科学与工程学院  计算机类群众办公室　  承办：计算机科学与工程学院国产祖宗办公室  技术支持：15877633425</p>
+
+               <p>网站标识码：6101000002　备案编号：陕ICP备05011920号　陕公网安备 61090202010032号</p> 
+              <p>版权说明：&reg;一位爱安康的国产祖宗</p>
+              <p><a href="https://akmap.8684.cn/">网站地图</a>|<a href="https://baike.baidu.com/item/%E5%85%8D%E8%B4%A3%E5%A3%B0%E6%98%8E/1330321?fr=aladdin">免责声明</a>|<a href=#"">隐私条款</a>|<a href="#">网站纠错</a>|<a href="1.7.html" target="_blank">联系我们</a>|<a href="#">申请公开信息</a>|</p>
+              <p><img src="图片/图标.jpg" id="p1" alt="">服务热线：12345</p>
+              <p>欢迎关注陕西安康官方网站：<a href="https://www.ankang.gov.cn/" target="_blank">https://www.ankang.gov.cn/</a></p>
+
+              </div>
+        </div>
+	  </div>
+	 
+	  <aside>
+	 
+	  	<ol id="sside">
+	  		
+	  		<li id="side"><span><a href="#all">首页</a></span></li>
+	  		<li id="side"><span><a href="#">欢迎</a></span></li>
+	  		<li id="side"><span><a href="#">关注</a></span></li>
+	  		<li id="side"><span><a href="#">陕西</a></span></li>
+	  		<li id="side"><span><a href="#">安康</a></span></li>
+	  		<li id="side"><span><a href="#all">顶部</a></span></li>
+	  	</ol>  
+	  </aside>
+	  
+	  
+</body>
+<html>
